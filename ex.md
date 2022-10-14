@@ -42,12 +42,17 @@ public class addTarefa {
 public class addTarefa {
    public static void main(String[] args) {
       Collection<Any> tarefas = new ArrayList();
-      tarefa.add(["Matemática", "Conclúido", "Alta", "Lista 1"]);
-      tarefa.add(["Biologia", "Não conclúido", "Baixa", "Lista 2"]);
-      tarefa.add(["Química", "Conclúido", "Baixa", "Lista 1"]);
-      tarefa.add(["Inglês", "Não conclúido", "Alta", "Lista 2"]);
+      tarefas.add(["Matemática", "Conclúido", "Alta", "Lista 1"]);
+      tarefas.add(["Biologia", "Não conclúido", "Baixa", "Lista 2"]);
+      tarefas.add(["Química", "Conclúido", "Baixa", "Lista 1"]);
+      tarefas.add(["Inglês", "Não conclúido", "Alta", "Lista 2"]);
+      
+      count = tarefas.length
 
-      System.out.println(“Lista de tarefas: ” + tarefas);
+      for (count >= 0) {
+        System.out.println(tarefas[count - 1]);
+        count--
+      }
    }
 }
 ```
