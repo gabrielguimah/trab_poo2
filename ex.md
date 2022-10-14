@@ -1,110 +1,53 @@
-# Exemplo de Herança:
+# 01 - História de Usuário
+
+## Como usuário eu desejo adicionar minhas tarefas, listá-las e concluí-las.
 
 ```java
-public class Pessoa {
-  private String nome;
-  private int idade;
-  private int cpf;
-}
-  
-public class Aluno extends Pessoa {
-  private int matricula;
-  private double media;
-  private String turma;
-}
-    
-public class Professor extends Pessoa {
-  private double salario;
-  private String turma;
+public class addTarefa {
+   public static void main(String[] args) {
+      Collection<Any> tarefas = new ArrayList();
+      tarefa.add(["Matemática", "Conclúido"]);
+      tarefa.add(["Biologia", "Não conclúido"]);
+      tarefa.add(["Química", "Conclúido"]);
+      tarefa.add(["Inglês", "Não conclúido"]);
+
+      System.out.println(“Lista de tarefas: ” + tarefas);
+   }
 }
 ```
 
+# 02 - História de Usuário
 
-# Exemplo de Implementação de Interface:
+## Como usuário eu desejo priorizar as minhas tarefas.
 
 ```java
-public class Animal {
-  public String filo;
-  public String classe;
-  public String ordem;
-  public String familia;
-  public String genero;
-}
+public class addTarefa {
+   public static void main(String[] args) {
+      Collection<Any> tarefas = new ArrayList();
+      tarefa.add(["Matemática", "Conclúido", "Alta"]);
+      tarefa.add(["Biologia", "Não conclúido", "Baixa"]);
+      tarefa.add(["Química", "Conclúido", "Baixa"]);
+      tarefa.add(["Inglês", "Não conclúido", "Alta"]);
 
-public interface Voador {
-  void voar()
-}
-
-public interface NaoVoador {
-  void caminhar()
-}
-  
-public class Pinguim extends Animal implements NaoVoador {
-  public String especie;
-  
-  @Override
-  public void caminhar() {
-    System.out.println("A "+ especie + " está caminhando!");
-  }
-}
-    
-public class Gaivota extends Animal implements Voador {
-  public String especie;
-  
-  @Override
-  public void voar() {
-    System.out.println("A "+ especie + " está voando!");
-  }
+      System.out.println(“Lista de tarefas: ” + tarefas);
+   }
 }
 ```
 
+# 03 - História de Usuário
 
-# Exemplo de Sobrecarga:
-
-```java  
-public class Calculo {
-  public static int calcular(int num){
-    int calculo;
-    quadrado = num * num * num;
-    return calculo;
-  }
-
-  public static double calcular(double num){
-    double calculo;
-    quadrado = num * num * num;
-    return calculo;
-  }
-}
-
-public static void main(String[] args) {
-  Calculo calculo = new Calculo();
-  System.out.println("Resultado de 4 elevado ao cubo => " + calculo.calcular(4));
-  System.out.println("Resultado de PI elevado ao cubo => " + calculo.calcular(Math.PI));
-}
-```
-
-# Exemplo de Composição:
+## Como usuário eu desejo organizar as minhas tarefas por listas
 
 ```java
-public class Time {
-  double valor;
-  int qtd_jogadores;
-  String nome;
-  double verba;
-  String estadio;
-}
+public class addTarefa {
+   public static void main(String[] args) {
+      Collection<Any> tarefas = new ArrayList();
+      tarefa.add(["Matemática", "Conclúido", "Alta", "Lista 1"]);
+      tarefa.add(["Biologia", "Não conclúido", "Baixa", "Lista 2"]);
+      tarefa.add(["Química", "Conclúido", "Baixa", "Lista 1"]);
+      tarefa.add(["Inglês", "Não conclúido", "Alta", "Lista 2"]);
 
-public class Jogador {
-  double salario;
-  String nome;
-  double valor;
-  boolean titular;
-  Time nome;
-}
-
-public static void main(String[] args) {
-  Time time = new Time(180000000, 24, "BBS FC", 10000000, "BBS Stadium");
-  Jogador jogador = new Jogador(100000, "Guimas", 177000000, true, time);
-  System.out.println(jogador);
+      System.out.println(“Lista de tarefas: ” + tarefas);
+   }
 }
 ```
